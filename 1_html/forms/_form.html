@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="margin: 40px auto; display: table;">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <p>мзамість тега p зазвичай використовують тег label</p>
+      <p><b>Атрибути name не мають повторюватись за винятком інпутіз із значенням типу radio</b></p>
+      <div>
+        <p>type text йде за замовчуванням</p>
+        <input type="text" name="username" value="defauld name" placeholder="placeholder"/>
+      </div>
+      <br>
+      <div>
+        <p>через type password не можна бачити текст вводу</p>
+        <input type="password" name="user_password" value="" placeholder="placeholder"/>
+      </div>
+      <div>
+        <p>через атрибут name інтупи з типом радіо зв'язуються між собою.</p>
+        <p>для вибору за замовчуванням можна використати атрибут checked</p>
+        <p><input checked type="radio" name="beer" value="light" />Light</p>
+        <p><input type="radio" name="beer" value="dark" />Dark</p>
+      </div>
+      <br>
+      <div>
+        <p>name має бути для всіх різним</p>
+        <p><input type="checkbox" name="car" value="yes">have a car</p>
+        <p><input checked type="checkbox" name="car1" value="yes">have 2 cars</p>
+        <p><input type="checkbox" name="car2" value="yes">have 3 cars</p>
+      </div>
+      <br>
+      <div>
+        <p><input type="file" name="photo" value="yes">Завантажте фото</p>
+      </div>
+      <br>
+      <div>
+        <p>textarea використовується для вводу більшого тексту, аніж просто імпут</p>
+        <p>cols and rows - це розміри поля вводу, але ми його маєм видалити, бо контролювати розмір треба через <b>CSS</b></p>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+      </div>
+      <br>
+
+      <div>
+        <select name="color">
+          <option value="red">red</option>
+          <option value="white">white</option>
+          <option selected value="yellow">yellow</option>
+        </select>
+        <br>
+
+        <p>якщо до селекту додати атрибут multiple, то можна буде вибирати декілька значень</p>
+        <select name="color" multiple>
+          <option value="red">red</option>
+          <option value="white">white</option>
+          <option value="yellow">yellow</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <p>в типі зазвичай зазначають submit. Це відправить всю форму</p>
+        <p>може ще буде з reset, то ворма просто очиститься </p>
+        <button type="button"></button>
+      </div>
+      <div>
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>
