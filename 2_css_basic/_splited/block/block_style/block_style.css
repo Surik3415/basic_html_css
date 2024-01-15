@@ -1,0 +1,26 @@
+body{
+  font-size: 50px;
+  box-sizing: border-box;
+}
+.block{
+margin-bottom: 50px;
+/* по горизонталі, вертикалі, радіус тіні, відсталь тіні, колір */
+box-shadow: 5px 5px 5px 5px #000;
+/* можна також тінь в середину робити за допомогою inset  */
+/* box-shadow: 5px 5px 5px 5px #000, inset 5px 5px 5px 5px #000; */
+padding: 35px;
+border-radius: 15px;
+margin: 15px;
+
+/* для керування прозорістю блоків можна використати опасіті */
+/* воно має бути в розмірі від 0 до 1 */
+opacity: 0.5;
+}
+
+.string{
+
+}
+
+.image{
+
+}

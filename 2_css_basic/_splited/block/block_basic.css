@@ -1,0 +1,36 @@
+body{
+  font-size: 25px;
+}
+.block-mp{
+  box-sizing: border-box;
+  border: 3px solid;
+  padding: 15px 5px 30px 90px;
+  margin: 40px 80px 5px 10px;
+}
+/* width та max(min)-width відрізняються тим, що за замовчуванням блочні елементи можуть розширюватись і звужатись,
+однак width задає строгу ширину, яка не буде гнутись при зміні розміру дісплею. */
+.width{
+  max-width: 1200px;
+  font-size: 25px;
+  border: 3px solid;
+}
+.height{
+  border: 3px solid;
+  height: 200px;
+}
+.image{
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 300px;
+}
+/* overflow значить, чи показувати все, що за блоком, якщо контент не вліз в блок
+може бути auto, visible, hidden, scroll */
+
+.overflow{
+  font-size: 35px;
+  border: 3px solid;
+  width: 600px;
+  height: 262px;
+  overflow:hidden;
+}

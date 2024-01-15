@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Druk-WideMediumItalic';
+  src: url(./Druk-WideMediumItalic.ttf) format('truetype'),
+       url(./Druk-WideMediumItalic.svg#Druk-WideMediumItalic) format('svg'),
+       url(./Druk-WideMediumItalic.woff) format('woff');
+}

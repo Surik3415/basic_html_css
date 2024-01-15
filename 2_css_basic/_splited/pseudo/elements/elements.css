@@ -1,0 +1,34 @@
+body{
+  margin-top: 100px;
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.list{
+  margin: 30px 0;
+  line-height: 120%;
+
+}
+.text::first-line{
+  color: brown;
+}
+
+.text::first-letter{
+  color: blue;
+  font-size: 50px;
+}
+
+.list li::before{
+  content: '📌';
+}
+
+.list li::after{
+  content: '------🔗';
+  display: inline-block;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+.list li:hover:after{
+  background-color: yellow;
+}

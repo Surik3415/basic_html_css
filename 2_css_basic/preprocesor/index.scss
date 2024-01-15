@@ -1,0 +1,85 @@
+// variables
+$fz:40px; 
+$main_color:red;
+// *****************************************************
+
+
+// layouts
+%dashed_border{
+  border: 3px dashed brown;
+}
+
+.i_do_not_exists_in_html{
+  font-size: 45px;
+}
+// *****************************************************
+
+// mixins
+@mixin mt($f){
+  margin-top: $f;
+}
+// *****************************************************
+
+
+
+
+body{
+  // margin-top: 20px;
+  @include mt(30px)
+}
+.list{
+  margin: 50px;
+}
+
+.block{
+  color: $main_color;
+  font-size: 24px;
+  span{
+    color:black
+  }
+  // не спрацює, бо спан з більшим пріорітетом
+  .block__text{
+    color: yellow;
+  }
+  p{
+    background-color: $main_color;
+  }
+  >p{
+    background-color: yellow;
+  }
+  +p{
+    background-color: #b47777;
+    @extend .i_do_not_exists_in_html
+  }
+}
+
+.link{
+  @extend %dashed_border;
+  color: rebeccapurple;
+  text-decoration: double;
+  margin-left: 20px;
+  
+  .block &{
+    font-size: $fz;
+  }
+
+  &.link-green{
+    background-color: green;
+  }
+
+  &:hover{
+    color:red;
+    background-color: yellowgreen;
+  }
+
+  &::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+}
