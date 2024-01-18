@@ -1,0 +1,43 @@
+.wrapper {
+  padding: 30px 300px;
+  min-height: 80%;
+  background: #2e0404;
+}
+
+.content__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: scale-circle;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation: scale-circle 1s ease 3 alternate 1s forwards;
+  animation-play-state: running;
+}
+.content__circle:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scale-circle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}
+@keyframes change-bc {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: red;
+  }
+}/*# sourceMappingURL=index.css.map */
