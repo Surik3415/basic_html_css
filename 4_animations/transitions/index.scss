@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pressable-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #000;
+  top:0;
+
+  // як швидко буде відбуватись анімація
+  transition-duration: 0.6s;
+
+  // transition-property - кому назначається анімація, за замовчуванням all 
+  // тут треба зазначати які саме властивості розбляться з транзішном
+  transition-property: background-color; // ось так box-shadow та top не анімуються
+  position: relative;
+
+  // можна ось так робити transition-duration: 0.6s, 2s; transition-property: background-color, top;
+
+  // затримка, після якої здійснюється анімація
+  transition-delay: 0.6s;
+
+  // вибір стилю анімації, за замовчуванням ease
+  transition-timing-function: ease;
+
+  // як це швидко написати
+  //      property/duration/function/delay
+  // transition: all, 1s, ease, 0.3s;
+}
+
+// якщо ми хочемо лише на наведення включити затримку, а коли курсор забираєш - забрати стилі без анімації, то треба
+// ВПИСАТИ ЛИШЕ В ПСЕВДОЕЛЕМЕНТІ
+.pressable-button:hover {
+  // ось так буде анімація лише на наведення, а після зняття курсору вона пробаде ОДРАЗУ
+  // transition: all, 1s, ease, 0.3s;
+  background-color: #2980b9;
+  top: 2px;
+  box-shadow: 0 3px 0 #000;
+}
+
+.pressable-button:active {
+  background-color: #21618c;
+  top: 4px;
+  box-shadow: 0 1px 0 #000;
+}

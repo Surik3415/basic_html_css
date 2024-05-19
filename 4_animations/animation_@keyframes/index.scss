@@ -1,0 +1,57 @@
+.wrapper {
+  padding: 30px 300px;
+  min-height: 80%;
+  background: #2e0404;
+}
+.content {
+		&__circle {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      left: 0;
+
+      // в цілому кі-фрейми ведуть себе як записи дії які потрібно зробити, від початку запису 0% до кінця 100%
+
+      animation-name: scale-circle; // встановлення анімації за іменем фрейму 
+      animation-duration: 1s; // на скільки швидко відбувається анімація
+      animation-timing-function: ease; // стиль здійснення анімації
+      animation-iteration-count: 3; // кількість повторювать здійснення дії (infinit) - безкінечно можна
+      animation-direction:alternate; // в яку сторону проігрується анімація, за замовчуванням normal, alternate - туди і назад
+      animation-delay: 1s; // затримка перед анімацією, якщо запускати анімацію з мінус ПОЛОВИНА від duration, то анімація почнеться з середини
+      animation-fill-mode: forwards; // вказує де в кінці залишається елемент, який анімується (на якому відсотку), за замовчуванням none 
+
+      // СКОРОЧЕННЯ
+      animation: scale-circle 1s ease 3 alternate 1s forwards;
+
+      // для підключення декількох фреймів можна їх записати через кому 
+      // animation: scale-circle 1s ease 3 alternate 1s forwards, change-bc 0.5s linear 6 normal 1s none;
+
+      animation-play-state:running; // дозволяє зупиняти анімацію за певною подією, за замовчуванням running
+      &:hover{
+        animation-play-state: paused; // це призупиняє анімацію, none - повертає в початкове положення
+      }
+
+    }
+}
+
+@keyframes scale-circle{
+  // замість відсотків можна також писати from/to 
+  0%{
+    left: 0;
+  }
+  // тут можна і 60% чи ін
+  100%{
+    left: 500px;
+  }
+}
+
+@keyframes change-bc{
+  0%{
+    background-color: rgb(255, 255, 255);
+  }
+  100%{
+    background-color: red;
+  }
+}

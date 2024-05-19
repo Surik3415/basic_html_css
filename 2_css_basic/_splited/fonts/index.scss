@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+@font-face {
+  font-family: 'Druk-WideMediumItalic';
+  src: url(./src_fonts/Druk-WideMediumItalic/Druk-WideMediumItalic.ttf) format('truetype'),
+       url(./src_fonts/Druk-WideMediumItalic/Druk-WideMediumItalic.svg) format('svg'),
+       url(./src_fonts/Druk-WideMediumItalic/Druk-WideMediumItalic.woff) format('woff');
+
+  // font-weight: ;
+  // font-style: ;
+}
+
+.loaded_font{
+  font-family: 'Druk-WideMediumItalic';
+  font-size: 40px;
+}
+
+.text{
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  +p{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 45px;
+  }
+}

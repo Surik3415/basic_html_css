@@ -1,0 +1,37 @@
+body {
+  font-size: 100px;
+}
+
+.wraper {
+  margin: 90px auto;
+  border: 10px solid black;
+}
+
+.block__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  border: 15px solid rgb(66, 10, 221);
+}
+.block__column {
+  border: 15px solid rgb(4, 88, 88);
+  flex-basis: 200px;
+}
+.block__column_1 {
+  align-self: flex-end;
+  order: 3;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.block__column_2 {
+  order: 1;
+}
+.block__column_3 {
+  order: 2;
+}
+.block__item {
+  background-color: rgb(168, 247, 10);
+  text-align: center;
+  border: 15px solid red;
+}/*# sourceMappingURL=index.css.map */

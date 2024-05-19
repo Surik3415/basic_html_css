@@ -1,0 +1,25 @@
+@charset "UTF-8";
+boby {
+  background-color: aqua;
+}
+
+p {
+  margin: 15px;
+}
+
+/* шрифти */
+.block_1 {
+  font-size: 14px;
+}
+.block_2 {
+  font-size: 1.5em;
+}
+.block_3 {
+  font-size: 1.8rem;
+}
+.block_4 {
+  font-size: 1.5vw;
+}
+.block_5 {
+  width: 50wmax;
+}/*# sourceMappingURL=index.css.map */

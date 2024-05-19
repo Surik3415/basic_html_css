@@ -1,0 +1,62 @@
+.link {
+  border: 3px dashed brown;
+}
+
+.i_do_not_exists_in_html, .block + p {
+  font-size: 45px;
+}
+
+body {
+  margin-top: 30px;
+}
+
+.list {
+  margin: 50px;
+}
+
+.block {
+  color: red;
+  font-size: 24px;
+}
+.block span {
+  color: black;
+}
+.block .block__text {
+  color: yellow;
+}
+.block p {
+  background-color: red;
+}
+.block > p {
+  background-color: yellow;
+}
+.block + p {
+  background-color: #b47777;
+}
+
+.link {
+  color: rebeccapurple;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  margin-left: 20px;
+}
+.block .link {
+  font-size: 40px;
+}
+.link.link-green {
+  background-color: green;
+}
+.link:hover {
+  color: red;
+  background-color: yellowgreen;
+}
+.link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,67 @@
+body{
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.block{
+  border: 5px solid black;
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  height: 1500px;
+}
+
+.block div{
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.block__1{
+  background-color: #9fd310;
+}
+.block__2{
+  background-color: #1530c7;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.block__3{
+  background-color: #c71919;
+  position: fixed;
+  left: 0;
+  top: 30px;
+}
+
+.block__4{
+  position: sticky;
+  top: 0;
+  background-color: #110808;
+  color: antiquewhite;
+}
+
+
+.list{
+  padding: 50px;
+  font-size: 22px;
+}
+.list li{
+  /* для абсолютного позиціонування псевдоелементів треба вказати в "головному класі" relative */
+  position: relative;
+  padding-left: 20px;
+
+}
+.list li::before{
+  content: '';
+  background-image: url(img/icons8-check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* картинка є фоновою, а тому не задає розміру псевдоелементу, тому треба  */
+  /* ВКАЗАТИ ШИРИНУ І ВИСОТУ  */
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

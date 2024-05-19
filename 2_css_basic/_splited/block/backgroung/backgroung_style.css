@@ -1,0 +1,65 @@
+p{
+  font-size: 28px;
+}
+
+.block{
+  height: 300px;
+  border-radius: 15px;
+  /* box-shadow: [горизонтальний зсув] [вертикальний зсув] [розмазування] [розмір тіні] [колір]; */
+  box-shadow: 0 0 15px #000;
+  margin: 40px;
+  padding: 15px;
+  background-color: #1bf;
+}
+
+.block1{
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+  margin: 40px;
+  padding: 15px;
+
+  /*                                     position/size repeat    attachment */
+  /* background: url('/img/100x100.png') 0 0/auto 100% no-repeat fixed; */
+  background-image: url(./img/100x100.png), url(./img/product1.jpg);
+  background-repeat: no-repeat;
+
+  /* по горизонталі, по вертикалі (може бути в пікселях або у відсотках) */
+  background-position: 50px, 20 px;
+  /* background-position: 50%; */
+  /* background-position: center; */
+
+  /* по ширині, вивоті */
+  /* через кому,бо для двух картинок (по суті це 20% 20%, 50% 50%) */
+  background-size: 20%, 50%;
+  /* background-size:contain; */
+  /* background-attachment: fixed; */
+}
+
+.block2{
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+  margin: 40px;
+  padding: 15px;
+
+
+
+  background-image: url(./img/product1.jpg);
+  background-attachment: fixed;
+}
+
+.list{
+  margin: 50px;
+}
+
+.list li{
+  font-size: 24px;
+  padding-left: 24px;
+  background-image: url(img/icons8-check.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+
+}
+
